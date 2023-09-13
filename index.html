@@ -1,13 +1,101 @@
-<ol>
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 1</title>
+</head>
+<body>
+<ul>
 <li><a href="http://kubsu.ru/">КубГУ</a></li>
 <li><a href="https://kubsu.ru/">КубГУ</a></li>
-<li><a href="https://bombardir.ru" ><img id ="elem" src ="image.jpg" alt ="..." width="500" height="1000"></a></li>
-<li><a href="/second.html">сокращенная ссылка на внутреннюю страницу</a></li>
+<li><a href="https://bombardir.ru" ><img id ="elem" src ="image.jpg" alt ="..." width="303" height="300"></a></li>
+<li><a href="/second.html">Сокращенная ссылка на внутреннюю страницу</a></li>
 <li><a href ="/index.html">Сокращенная ссылка на главную страницу</a></li>
 <li><a href="#elem">Ссылка на фрагмент страницы</a></li>
-<li><a href="/?id=3735">ссылка с id</a></li>
-<li><a href="about/third.html">относительная ссылка в каталог about</a></li>
-<li><a href="../index.html">относительная ссылка выше каталогом</a></li>
-<li><a href="../../index.html">относительная ссылка выше  двумя каталогом</a></li>
-<li>Что такое<a href="https://mellodesign.ru/blogs/kontekstnaya-ssylka"> контекстная ссылка</a></li>
-</ol>
+<li><a href="index.html?size=42&height=60&colour=16119260">Ссылка с тремя параметрами</a></li>
+<li><a href="/?id=3735">Ссылка с параметром id в URL</a></li>
+<li><a href ="./four.html">Относительная ссылка на файл в текущем каталоге</a></li>
+<li><a href="about/third.html">Относительная ссылка в каталог about</a></li>
+<li><a href="../index.html">Относительная ссылка выше каталогом</a></li>
+<li><a href="../../index.html">Относительную на страницу в каталоге двумя уровнями выше</a></li>
+<li>Что такое <a href="https://mellodesign.ru/blogs/kontekstnaya-ssylka">контекстная ссылка</a></li>
+<li><a href="https://ru.wikipedia.org/wiki/Бейл,_Гарет#Возвращение_в_«Тоттенхэм»">Ссылка на фрагмент страницы стороннего сайта</a></li>
+<li><img src="real.jpg" alt="..."  usemap="#madrid"</a></li>
+<map name="madrid">
+<area shape="circle"  coords="349,117,23" href="https://ru.wikipedia.org/wiki/Винисиус_Жуниор" alt="...">
+<area shape="rect"  coords="105,232,173,278" href="https://www.realmadrid.com/en" alt="...">
+</map>
+<li><a href="#">Ссылка с пустым href</a></li>
+<li><a>Ссылка без href</a></li>
+<li><a href="https://otvet.mail.ru/question/16398958" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li> 
+<li><a href="https://www.slamdunk.ru/news/nba/" rel="nofollow"><noindex>Ссылка, запрещенная для индексации поисковиками</noindex></a></li>
+<li><p>Пронумерованный список ссылок с подписями title:</p>
+      <ol>
+        <li><a href="https://metanit.com" title="Сайт №1">Метанит</a></li>
+        <li><a href="https://ru.pinterest.com" title="Сайт №2">Пинтерест</a></li>
+        <li><a href="https://www.apex-football.com" title="Сайт №3">Апекс футбол</a></li>
+      </ol>
+</li>
+<li><a href="ftp://user:password@sisadmin.ru/Temp/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+</ul>
+<h1>Регистрационная форма</h2>
+<form action="обработчика данных формы" method="post">
+<label>ФИО:
+<input type="text">
+</label><br>
+<br>
+<label>Телефон:
+<input type="tel">
+</label><br>
+<br>
+<label>E-mail:
+<input type="email">
+</label><br>
+<br>
+<label>Дата рождения:
+<input type="date">
+</label><br>
+<br>
+<label>Пол:</label>
+<br>
+<label>
+<input type="radio" name="radio_1" value="male">
+Мужской
+</label>
+<label>
+<input type="radio" name="radio_1" value="female">
+Женский
+</label><br>
+<br>
+<label>
+        Любимый язык программирования:<br>
+        <select name="programming_languages" multiple="multiple">
+            <option value="Pascal">Pascal</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">Python</option>
+            <option value="Python">PHP</option>
+            <option value="Java">Java</option>
+            <option value="Haskel">Haskel</option>
+            <option value="Clojure">Clojure</option>
+            <option value="Prolog">Prolog</option>
+            <option value="Scala">Scala</option>
+        </select>
+    </label><br>
+    <label>
+	<br>
+        Биография:<br>
+        <textarea name="biography" cols="40" rows="5"></textarea>
+    </label><br>
+	<br>
+    <label><input type="checkbox" checked="checked" name="check-1" />
+        С контрактом ознакомлен(а)
+    </label><br>
+	<br>
+    <input type="submit" value="Сохранить" />
+ </form>
+</body>
+</html>
+	
