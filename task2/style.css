@@ -1,0 +1,123 @@
+.body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	max-width: 970px;
+	overflow-x: hidden;
+	height: auto;
+	margin: 0 auto;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+.navbar{
+	width: 100%;
+	height: 70px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+	justify-content: center;
+	
+}
+.navbar .container{
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffdf1f;
+	border-radius: 20px;
+}
+.navbar-menu{
+	List-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;	
+	margin-left: 300px;	
+}
+.navbar-menu li{
+	display: inline-block;
+}
+.navbar-menu li a{
+	display: inline-block;
+	color: #000;
+	opacity: 0.6;
+	text-decoration: none;
+	padding: 10px;
+	transition: all .07s ease-in-out;
+}
+.navbar-menu li a:hover{
+	opacity: 1;
+}
+.navbar-wrap{
+	display: flex;
+	flex-flow: row nowrap;
+	
+}
+.navbar-brand{
+	font-weight: 700;
+	font-size: 26px;
+	text-decoration: none;
+	color: #000;
+	transition: all .07s ease-in-out;
+}
+.logo{
+	height:40px;	
+
+}	
+.navbar-brand:hover{	
+	color:#61605ac2;
+
+}
+.footer-bg{
+    background-color: #ffdf1f;
+	align-items: center;
+	padding: 5px 0 5px 0;
+	border-radius: 10px;
+}
+.footer-bg p{
+    color: #000;
+	font-weight: 700;
+}
+td,th{
+	border:1px solid #000;
+	text-align: center
+}
+.colour1{
+	background-color:#af6213;
+}
+.colour2{
+	background-color:#ddc5a0;
+}
+.colour3{
+	background-color:#af6213;
+}
+.colour4{
+	background-color:#ddc5a0;
+}
+.form{
+	margin-top:20px;
+	background-color:#efe7b3;
+	border-radius: 20px;
+	justify-content: center;
+	text-align:left;
+	padding-bottom:10px;
+}
+.table{
+	margin-top:20px;
+	margin-bottom:20px;
+	background-color:#efe7b3;
+	border-radius: 20px;
+	padding-bottom:10px;
+	justify-content: center;
+}
+.links{	
+	margin-bottom:20px;
+	background-color:#efe7b3;
+	border-radius: 20px;
+	padding-bottom:10px;
+}
+h1{
+	text-align:center;
+}
+caption{
+	font-size:32px;
+}
