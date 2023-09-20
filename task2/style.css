@@ -108,8 +108,6 @@ td,th{
 	border-radius: 20px;
 	padding-bottom:10px;
 	justify-content: center;
-	display: flex;
-    	align-items: center;
 }
 .links{	
 	margin-bottom:20px;
@@ -122,4 +120,7 @@ h1{
 }
 caption{
 	font-size:32px;
+}
+table{
+	margin:auto;
 }
