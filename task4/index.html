@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8">
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 3</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+	    <div class="container-fluid">
+		<div class="row justify-content-center" style="background-color:#ffdf1f;">
+		 <div class="col-xs-12 m-2 col-md-6  order-md-0 form-inline ml-auto ">
+			<a href="#" ><img src="logo.png" class="logo" alt="..."></a>
+			<a href="#" class="navbar-brand">DINOSAURUS</a>
+			</div>
+			<nav class="col-xs-12 mr-n6 col-md-5  order-md-1">
+			    <div class = "container">
+				<div class="row " id="navbar-menu"> 
+					<div  class="col-md-3 pt-3"><a href="#" id="li">Новости</a></div>
+					<div  class="col-md-3 pt-3"><a href="#" id="li">Периоды</a></div>
+					<div  class="col-md-2 pt-3"><a href="#" id="li">Виды</a></div>
+				</div>
+				</div>
+			</nav>
+			</div>
+	</div>
+</header>
+<div class="body">
+	<div class="links">
+	<h1>Гиперссылки</h1>
+	<ul>
+		<li><a href="http://kubsu.ru/">КубГУ</a></li>
+		<li><a href="https://kubsu.ru/">КубГУ</a></li>
+		<li><a href="https://bombardir.ru" ><img id ="elem" src ="../image.jpg" alt ="..." width="303" height="300"></a></li>
+		<li><a href="/second.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+		<li><a href ="/index.html">Сокращенная ссылка на главную страницу</a></li>
+		<li><a href="#elem">Ссылка на фрагмент страницы</a></li>
+		<li><a href="index.html?size=42&height=60&colour=16119260">Ссылка с тремя параметрами</a></li>
+		<li><a href="/?id=3735">Ссылка с параметром id в URL</a></li>
+		<li><a href ="./four.html">Относительная ссылка на файл в текущем каталоге</a></li>
+		<li><a href="about/third.html">Относительная ссылка в каталог about</a></li>
+		<li><a href="../four.html">Относительная ссылка выше каталогом</a></li>
+		<li><a href="../../four.html">Относительную на страницу в каталоге двумя уровнями выше</a></li>
+		<li>Что такое <a href="https://mellodesign.ru/blogs/kontekstnaya-ssylka">контекстная ссылка</a></li>
+		<li><a href="https://ru.wikipedia.org/wiki/Бейл,_Гарет#Возвращение_в_«Тоттенхэм»">Ссылка на фрагмент страницы стороннего сайта</a></li>
+		<li><img id="real" src="real.jpg" alt="..."  usemap="#madrid">
+		<map name="madrid">
+		<area shape="circle"  coords="196,64,11" href="https://ru.wikipedia.org/wiki/Винисиус_Жуниор" alt="...">
+		<area shape="rect"  coords="60,132,96,156" href="https://www.realmadrid.com/en" alt="...">
+		</map></li>
+		<li><a href="#">Ссылка с пустым href</a></li>
+		<li><a>Ссылка без href</a></li>
+		<li><a href="https://otvet.mail.ru/question/16398958" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li> 
+		<li><!--noindex--><a href="https://www.slamdunk.ru/news/nba/" rel="nofollow">Ссылка, запрещенная для индексации поисковиками</a><!--/noindex--></li>
+		<li><p>Пронумерованный список ссылок с подписями title:</p>
+		      <ol>
+		        <li><a href="https://metanit.com" title="Сайт №1">Метанит</a></li>
+		        <li><a href="https://ru.pinterest.com" title="Сайт №2">Пинтерест</a></li>
+		        <li><a href="https://www.apex-football.com" title="Сайт №3">Апекс футбол</a></li>
+		      </ol>
+		</li>
+		<li><a href="ftp://user:password@sisadmin.ru/Temp/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+	</ul>
+	</div>
+	<div class="table">
+	  	<table>
+	  	<caption><b>Таблица</b></caption>
+	  	<tr class="colour1">
+			<th>Колонка 1</th>
+			<th>Колонка 2</th>
+			<th>Колонка 3</th>
+			<th>Колонка 4</th>
+		</tr>
+		<tr class="colour2">
+			<td colspan="4">Ячейка 1, объединённая с 2,3,4</td>
+		</tr>
+		<tr class="colour1">
+			<td colspan="3">Ячейка 5, объединённая с 6,7</td>
+			<td>Ячейка 8</td>
+		</tr>
+		<tr class="colour2">
+			<td colspan="2">Ячейка 9, объединённая с 10</td>
+			<td>Ячейка 11</td>
+			<td>Ячейка 12</td>
+		</tr>
+		<tr class="colour1">
+			<td>Ячейка 13</td>
+			<td>Ячейка 14</td>
+			<td>Ячейка 15</td>
+			<td>Ячейка 16</td>
+		</tr>
+		<tr class="colour2">
+			<td>Ячейка 17</td>
+			<td>Ячейка 18</td>
+			<td>Ячейка 19</td>
+			<td>Ячейка 20</td>
+		</tr>
+	  	</table>
+  	</div>	
+  	<div class="form">
+	    	<h1>Регистрационная форма</h1>
+	    	<form action="обработчик_данных_формы" method="post">
+	    		<label>ФИО:
+	    			<input type="text">
+	    		</label><br><br>
+	    		<label>Телефон:
+	    			<input type="tel">
+	    		</label><br><br>
+	    		<label>E-mail:
+	    			<input type="email">
+	    		</label><br><br>
+	    		<label>Дата рождения:
+	    			<input type="date">
+	    		</label><br><br>
+	    		<label>Пол:</label><br>
+	    		<label>
+	    			<input type="radio" name="radio_1" value="male">
+	    			Мужской
+	    		</label>
+	    		<label>
+	    			<input type="radio" name="radio_1" value="female">
+	    			Женский
+	    		</label><br><br>
+	    		<label>
+	    		        Любимый язык программирования:<br>
+	    		        <select name="programming_languages" multiple="multiple">
+	    		            <option value="Pascal">Pascal</option>
+	    		            <option value="C">C</option>
+	    		            <option value="C++">C++</option>
+	    		            <option value="JavaScript">JavaScript</option>
+	    		            <option value="PHP">Python</option>
+	    		            <option value="Python">PHP</option>
+	    		            <option value="Java">Java</option>
+	    		            <option value="Haskel">Haskel</option>
+	    		            <option value="Clojure">Clojure</option>
+	    		            <option value="Prolog">Prolog</option>
+	    		            <option value="Scala">Scala</option>
+	    		        </select>
+	    		    </label><br>
+	    		    <label><br>
+	    		        Биография:<br>
+	    		        <textarea name="biography" cols="40" rows="5"></textarea>
+	    		    </label><br><br>
+	    		    <label>
+	    			    <input type="checkbox" checked="checked" name="check-1" >
+	    		            С контрактом ознакомлен(а)
+	    		    </label><br><br>
+	    		    <input type="submit" value="Сохранить" >
+	    	</form>
+    	</div>
+  </div>
+<footer>
+  <div class="footer-bg">
+    <p> Подвал (С) Куликов Артём
+  </div>
+</footer>
+</body>
+</html>
+	
