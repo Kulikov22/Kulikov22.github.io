@@ -10,23 +10,23 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Задание 3</title>
+  <title>Задание 4</title>
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header>
 	    <div class="container-fluid">
-		<div class="row justify-content-center" style="background-color:#ffdf1f;">
-		 <div class="col-xs-12 m-2 col-md-6  order-md-0 form-inline ml-auto ">
+		<div class="row justify-content-center" style="background-color:#ffdf1f;border-radius:20px;">
+		 <div class="col-xs-12 m-2 col-xl-3 col-lg-4 col-md-5 form-inline ml-auto ">
 			<a href="#" ><img src="logo.png" class="logo" alt="..."></a>
 			<a href="#" class="navbar-brand">DINOSAURUS</a>
 			</div>
-			<nav class="col-xs-12 mr-n6 col-md-5  order-md-1">
+			<nav class="col-xs-12 mr-n6 col-md-5  ">
 			    <div class = "container">
-				<div class="row " id="navbar-menu"> 
-					<div  class="col-md-3 pt-3"><a href="#" id="li">Новости</a></div>
-					<div  class="col-md-3 pt-3"><a href="#" id="li">Периоды</a></div>
-					<div  class="col-md-2 pt-3"><a href="#" id="li">Виды</a></div>
+				<div class="row" id="navbar-menu">
+					<div  class="col-md-3.5 col-lg-2.5   pr-3 pt-3"><a href="#" class ="li">Новости</a></div>
+					<div  class="col-md-3.5 col-lg-2.5   pr-3 pt-3"><a href="#" class ="li">Периоды</a></div>
+					<div  class="col-md-2.5 col-lg-2.5   pr-3 pt-3"><a href="#" class ="li">Виды</a></div>
 				</div>
 				</div>
 			</nav>
@@ -34,7 +34,9 @@
 	</div>
 </header>
 <div class="body">
-	<div class="links">
+ <div class="container pt-2">
+ <div class="row">
+	 <div class="col-xs-12 col-md-12 order-sm-1 order-2 m-2 p-2 mt-3" style=" background-color: #efe7b3; border-radius:20px;" >
 	<h1>Гиперссылки</h1>
 	<ul>
 		<li><a href="http://kubsu.ru/">КубГУ</a></li>
@@ -51,14 +53,14 @@
 		<li><a href="../../four.html">Относительную на страницу в каталоге двумя уровнями выше</a></li>
 		<li>Что такое <a href="https://mellodesign.ru/blogs/kontekstnaya-ssylka">контекстная ссылка</a></li>
 		<li><a href="https://ru.wikipedia.org/wiki/Бейл,_Гарет#Возвращение_в_«Тоттенхэм»">Ссылка на фрагмент страницы стороннего сайта</a></li>
-		<li><img id="real" src="real.jpg" alt="..."  usemap="#madrid">
+		<li><img id="real" src="../real.jpg" alt="..."  usemap="#madrid">
 		<map name="madrid">
 		<area shape="circle"  coords="196,64,11" href="https://ru.wikipedia.org/wiki/Винисиус_Жуниор" alt="...">
 		<area shape="rect"  coords="60,132,96,156" href="https://www.realmadrid.com/en" alt="...">
 		</map></li>
 		<li><a href="#">Ссылка с пустым href</a></li>
 		<li><a>Ссылка без href</a></li>
-		<li><a href="https://otvet.mail.ru/question/16398958" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li> 
+		<li><a href="https://otvet.mail.ru/question/16398958" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
 		<li><!--noindex--><a href="https://www.slamdunk.ru/news/nba/" rel="nofollow">Ссылка, запрещенная для индексации поисковиками</a><!--/noindex--></li>
 		<li><p>Пронумерованный список ссылок с подписями title:</p>
 		      <ol>
@@ -70,9 +72,10 @@
 		<li><a href="ftp://user:password@sisadmin.ru/Temp/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
 	</ul>
 	</div>
-	<div class="table">
-	  	<table>
-	  	<caption><b>Таблица</b></caption>
+	<div class="col-xs-12 col-md-12 order-sm-2 order-1 m-2 p-2 mt-3 pt-6" style="background-color:#efe7b3;border-radius: 20px;">
+	  	<div class="table-responsive">
+	  	<h1><b>Таблица</b></h1>
+		<table>
 	  	<tr class="colour1">
 			<th>Колонка 1</th>
 			<th>Колонка 2</th>
@@ -104,8 +107,9 @@
 			<td>Ячейка 20</td>
 		</tr>
 	  	</table>
-  	</div>	
-  	<div class="form">
+	</div>
+  	</div>
+  	<div class="col-xs-12 col-md-12 order-sm-3 order-3 m-2 p-2 mt-3" style=" background-color: #efe7b3;border-radius: 20px;">
 	    	<h1>Регистрационная форма</h1>
 	    	<form action="обработчик_данных_формы" method="post">
 	    		<label>ФИО:
@@ -157,8 +161,10 @@
 	    	</form>
     	</div>
   </div>
+  </div>
+  </div>
 <footer>
-  <div class="footer-bg">
+  <div class="footer-bg pl-1 pr-1 pb-3 m-1" style="border-radius: 10px;">
     <p> Подвал (С) Куликов Артём
   </div>
 </footer>
