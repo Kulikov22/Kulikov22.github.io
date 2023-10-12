@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5</title>
+    <script defer src="main.js"></script>
+     </head>
+     <body>
+        <form>
+        <h1>Калькулятор стоимости</h1>
+        <label for="product">Выберите продукт:</label><br>
+        <select id="product">
+            <option value="30">Хлеб - 30</option>
+            <option value="200">Колбаса - 200</option>
+            <option value="60">Шоколадка - 60</option>
+            <option value="120">Сок - 120</option>
+        </select>
+        <br>
+        <label for="volume">Введите количество товара:</label><br>
+        <input type="text" id="volume" placeholder="0" autofocus>
+        <br><button id="calculateButton" onclick="calc()" >Подсчитать стоимость</button>
+        <h2>Стоимость заказа: <span id="total">0</span> руб.</h2>
+    </form>
+    </body>
+</html>
