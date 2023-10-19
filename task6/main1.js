@@ -38,6 +38,6 @@ function getFormValue(event) {
         else Result.value = 'Выберите тип';
     } else if (Sam.checked) {
         if (CheckBox.checked) Result.value = (Number.value * 800 + 50) + "$";
-        else Result.value = (Number.value * 80) + "$";
+        else Result.value = (Number.value * 800) + "$";
     }
 };
