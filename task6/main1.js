@@ -5,12 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const Car = document.getElementById('Car');
     const Sam = document.getElementById('Sam');
 
-    FormChangeHandler();
-
+    new FormChangeHandler();
     form.addEventListener('change', getFormValue);
     radio.addEventListener('change', FormChangeHandler);
 
-    function FormChangeHandler(event) {
+    function FormChangeHandler() {
         if (Vel.checked) {
             document.getElementById('select').hidden = true;
             document.getElementById('checkbox').hidden = true;
@@ -33,13 +32,21 @@ document.addEventListener('DOMContentLoaded', function() {
         if (Vel.checked) {
             Result.value = (Number1.value * 30) + "$";
         } else if (Car.checked) {
-            if (ProductType.value === 'first') Result.value = (2000 * Number1.value ) + "$";
-            else if (ProductType.value === 'second') Result.value = (3000 * Number1.value ) + "$";
-            else if (ProductType.value === 'third') Result.value = (5000 * Number1.value ) + "$";
-            else Result.value = 'Выберите тип';
+            if (ProductType.value === 'first') {
+                Result.value = (2000 * Number1.value) + "$";
+            } else if (ProductType.value === 'second') {
+                Result.value = (3000 * Number1.value) + "$";
+            } else if (ProductType.value === 'third') {
+                Result.value = (5000 * Number1.value) + "$";
+            } else {
+                Result.value = 'Выберите тип';
+            }
         } else if (Sam.checked) {
-            if (CheckBox.checked) Result.value = (Number1.value * 800 + 50) + "$";
-            else Result.value = (Number1.value * 800) + "$";
+            if (CheckBox.checked) {
+                Result.value = (Number1.value * 800 + 50) + "$";
+            } else {
+                Result.value = (Number1.value * 800) + "$";
+            }
         }
     }
 });
