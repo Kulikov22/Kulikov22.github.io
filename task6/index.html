@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6</title>
+    <script defer src="main1.js"></script>
+</head>
+<body>
+<form id="form">
+    <fieldset>
+    <h1>Калькулятор стоимости заказа</h1>
+    <label for="product">Выберите продукт:</label><br>
+    <div id="radio">
+    <input type="radio" name="radio1" id="Vel" checked>Велосипед<br>
+    <input type="radio" name="radio1" id="Car" >Машина<br>
+    <input type="radio" name="radio1" id="Sam" >Самокат<br>
+</div>
+    <div id="select">
+    <label for="productType">Выберите продукт:</label><br>
+    <select id="productType" >
+        <option value="first">Легковая</option>
+        <option value="second">Грузовая</option>
+        <option value="third">Электрическая</option>
+    </select><br>
+</div>
+    <label for="volume">Введите количество товара:</label><br>
+    <input type="text" id="volume" name="volume" placeholder="0" autofocus><br>
+    <div id="checkbox">
+        <input type="checkbox" name="checkbox" id="check" checked>
+        <label for="check">Гарантия</label><br>
+    </div>
+    <input  type="text" name="result" value="Результат: " aria-label="Пример отключенного входа" disabled readonly>
+</fieldset>
+</form>
+</body>
+</html>
