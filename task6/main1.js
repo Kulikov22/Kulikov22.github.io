@@ -25,21 +25,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function getFormValue(event) {
         event.preventDefault();
-        const Number = form.querySelector('[name ="volume"]');
+        const Number1 = form.querySelector('[name ="volume"]');
         const ProductType = form.querySelector('[name ="productType"]');
         const Result = form.querySelector('[name ="result"]');
         const CheckBox = form.querySelector('[name ="checkbox"]');
         
         if (Vel.checked) {
-            Result.value = (Number.value * 30) + "$";
+            Result.value = (Number1.value * 30) + "$";
         } else if (Car.checked) {
-            if (ProductType.value === 'first') Result.value = (500 * Number.value * 1.5) + "$";
-            else if (ProductType.value === 'second') Result.value = (500 * Number.value * 0.9) + "$";
-            else if (ProductType.value === 'third') Result.value = (500 * Number.value * 1.2) + "$";
+            if (ProductType.value === 'first') Result.value = (2000 * Number1.value ) + "$";
+            else if (ProductType.value === 'second') Result.value = (3000 * Number1.value ) + "$";
+            else if (ProductType.value === 'third') Result.value = (5000 * Number1.value ) + "$";
             else Result.value = 'Выберите тип';
         } else if (Sam.checked) {
-            if (CheckBox.checked) Result.value = (Number.value * 80 + 20) + "$";
-            else Result.value = (Number.value * 80) + "$";
+            if (CheckBox.checked) Result.value = (Number1.value * 800 + 50) + "$";
+            else Result.value = (Number1.value * 800) + "$";
         }
     }
 });
