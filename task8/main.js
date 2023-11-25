@@ -7,16 +7,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const close = document.getElementById('btn-close');
     const x = document.getElementById('btn-x');
 
+    var modalShowed = false;
+
     close.addEventListener("click", function(event) { 
         history.back();
+        modalShowed = false;
     });
 
     x.addEventListener("click", function(event) {
         history.back();
+        modalShowed = false;
     });
 
-    open.addEventListener("click", function(event) { 
-        history.pushState({ page: "popup" }, "Форма", "#popup"); 
+    open.addEventListener("click", function(event) {
+        history.pushState({direction: 'forward', page: "popup" }, "Форма", "#popup"); 
+        modalShowed = true;
     });
 
     form.addEventListener("submit", function (event) {
@@ -42,16 +47,24 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(function (response) { // This function runs only on error
             console.log('Fail!', response);
         })
-        .finally(function () { // This function runs regardless of success or error
-            console.log('This always runs!');
-        });
 
         localStorage.setItem("form_inf", JSON.stringify(form_inf));
         setTimeout(function () {
             history.back();
             Modal.hide();
+            modalShowed = false;
             form.reset();
             localStorage.removeItem("form_inf");
         }, 1000);
+    });
+
+    window.addEventListener('popstate', function() {
+        if (modalShowed) {
+            Modal.hide();
+            modalShowed = false;
+        } else {
+            Modal.show();
+            modalShowed = true;
+        }
     });
 });
